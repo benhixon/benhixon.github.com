@@ -1,0 +1,12 @@
+body { color: white; background: black; }
+body { margin-left: 10%; margin-right: 10%; }
+
+ul.redline {
+padding-left: 0.2em;
+border-left: solid;
+border-right: none;
+border-top: none;
+border-bottom: none;
+border-left-width: thin;
+border-color: red;
+}
