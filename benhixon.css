@@ -2,6 +2,7 @@ body { color: white; background: black; }
 body { margin-left: 0%; margin-right: 10%; }
 
 ul.redline {
+margin-left:5%;
 padding-left: 0.2em;
 border-left: solid;
 border-right: none;
@@ -12,7 +13,7 @@ border-color: red;
 }
 
 img.bg{
-position:absolute;
-right:50;
-bottom:20;
+position:fixed;
+right:0;
+bottom:0;
 }
