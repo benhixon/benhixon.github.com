@@ -1,4 +1,4 @@
-body { color: white; background: black; }
+body { color: black; background: gray; }
 body { margin-left: 10%; margin-right: 10%; }
 
 ul.redline {
@@ -9,4 +9,10 @@ border-top: none;
 border-bottom: none;
 border-left-width: thin;
 border-color: red;
+}
+
+img.bg{
+position:absolute;
+right:50;
+bottom:20;
 }
