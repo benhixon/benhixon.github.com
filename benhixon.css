@@ -13,11 +13,15 @@ ul.redline {
 }
 
 a:link{
-    color: red;
+    color: #900B09;    
 }
 
 a:visited{
     color: #900B09;
+}
+
+a.h1link:link{
+    color: white;
 }
 
 img.bg{

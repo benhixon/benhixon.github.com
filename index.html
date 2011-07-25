@@ -8,28 +8,48 @@
 <!-- Link to the external style sheet: -->
 <link rel="stylesheet" type="text/css" href="benhixon.css" />                                                              
 
+<!-- Internal style sheet, if any: -->
+
 <!-- BEHAVIOR -->
 <!-- Link to the jQuery library: -->      
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 
 <!-- Link to the external javascript: -->          
 <script type="text/javascript" src="benhixon.js"></script>
 
-<!-- Internal javascript, if any: -->
-<script type="text/javascript">                                         
-	$(document).ready( function(){
-		//do stuff
-		$("a").click( function(){ 
-            alert("you deserve this.");
+<!-- Internal javascript, if any: -->                                               
+<script type="text/javascript">
+    $(document).ready( function(){
+        $('#metalme').click(function(){
+            $('#metalme').fadeOut('slow',function(){});
         });
-	});                                    
-</script>                                                               
+        
+        $('#colorme').click(function(){
+            $('#metalme').fadeIn('slow',function(){});
+        });
+
+        $('a').hover(
+            function(){
+            //$(this).css("background-color","yellow");
+                $(this).css({'background-color' : 'white'});
+            }, 
+            function(){
+                var cssObj = {
+                  'background-color' : 'black',
+                  'color' : '#900B09'
+                }
+                $(this).css(cssObj);
+
+        });
+    });
+</script>
+
 </head>
                                                                  
 <body>                                                                  
 <!-- STRUCTURE -->
 
-<h1>benhixon. content coming soon.</h1>
+<h1><a class=h1link" href="https://github.com/benhixon">benhixon</a>. content coming soon.</h1>
 
 <p>some links</p>
 <ul class="redline">
@@ -53,7 +73,9 @@
     <li><a href="http://languagelog.ldc.upenn.edu/nll/">Language Log</a></li>
     <li><a href="http://norvig.com/chomsky.html">On Chomsky and the Two Cultures of Statistical Learning</a></li>
 </ul>
-    
-<img class="bg" src="me.jpg"/>
+
+<img id="colorme" class="bg" src="mecolor.jpg"/>
+<img id="metalme" class="bg" src="me.jpg"/>
+
 </body>                                                                 
 </html>
