@@ -26,6 +26,7 @@ a.h1link:link{
 
 img.bg{
     position:fixed;
+    height:100%;
     right:0;
     bottom:0;
 }
